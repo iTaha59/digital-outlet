@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, "Open Sans", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.f-nav {
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid rgb(220, 223, 226);
+    align-items: center !important;
+}
+
+.i-box {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgb(41, 50, 58);
+    margin-right: 7vw;
+    display: flex;
+    width: 450px;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center !important;
+    letter-spacing: 1px;
+}
+
+.spn {
+    color: rgb(220, 223, 226);
+}
+
+.s-nav {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+}
+
+.i-box2 {
+    display: flex;
+    height: 60%;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+    justify-content: space-between;
+}
+
+.divimg {
+    width: 50%;
+    background-color: black;
+    /* height: 100%; */
+    border-radius: 100px;
+    border: 5px solid black;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.inp-div {
+    display: flex;
+    /* width: 65%; */
+    height: 40%;
+    background-color: black;
+    border-radius: 50px;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.inp {
+    border: none;
+    height: 100%;
+    width: 68%;
+    font-size: medium;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 20px;
+    color: rgb(135, 139, 143);
+    /* padding-right: 0px; */
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+    /* word-spacing: 25px; */
+}
+
+.inp::placeholder {
+    font-size: 15px;
+}
+
+.selt:focus,.inp:focus {
+    outline: none;
+    
+}
+
+.selt {
+    height: 100%;
+    border: none;
+    text-align: right;
+    font-size: 15px;
+    color: rgb(135, 139, 143);
+}
+
+.selt1 {
+    border: none;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.selt1:focus {
+    outline: none;
+}
+
+.spn1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mg {
+    margin-left: 2%;
+}
+
+
+.t-nav {
+    padding-top: 13px;
+    padding-left: 100px;
+    background-color: black;
+    height: 50px;
+    color: white;
+}
+
+.div-s1 {
+    background-image: url("https://digitalshop.com.pk/wp-content/uploads/2021/08/image_2021-08-07_003227.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 53vh;
+    width: 100%;
+}
+
+
+.my-c {
+    width: 70% !important;
+    height: 100% !important;
+    /* background-color: aqua !important; */
+    margin: auto !important;
+    /* position: relative !important; */
+    /* left: 30% !important; */
+}
+.my-c1 {
+    width: 100% !important;
+    height: 53vh;
+}
+
+.cc {
+    width: 50%;
+    margin-top: 12%;
+}
+
+.cc1 {
+    width: 50% !important;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    height: 53vh;
+}
+
+.cimg {
+    width: 50%;
+}
+
+.h5 {
+    color: blue !important;
+}
+
+.f-nav1 {
+    display: none;
+}
+
+.f-nav2 {
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 1199px) {
+    .nav-cont{
+        top: 60px !important;
+        left: 150px !important;
+    }
+    .f-nav {
+        display: none;
+    }
+    .s-nav {
+        display: none;
+    }
+    .f-nav1 {
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .f-nav2 {
+        display: block;
+        width: 90vw !important;
+        margin: 50px auto 0 auto;
+        height: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .icons {
+        width: 30%;
+    }
+    .t-nav {
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    .selt {
+        display: none;
+    }
+    .inp {
+        width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 869px) {
+    .hhh {
+        font-size: 28px;
+    }
+    .div-s1 {
+        height: 45vh;
+    }
+    .nav-cont{
+        top: 60px !important;
+        left: 50px !important;
+    }
+  }
+
+  @media only screen and (max-width: 699px) {
+    .hhh {
+        font-size: 20px;
+    }
+    .h5 {
+        font-size: 12px !important;
+    }
+    .div-s1 {
+        height: 30vh;
+    }
+    .cc {
+        margin-top: 15% !important;
+    }
+    .nav-cont{
+        top: 50px !important;
+        left: 40px !important;
+    }
+  }
+
+  .div-s3 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .nav-cont{
+        top: 45px !important;
+        left: 20px !important;
+    }
+    .hhh {
+        font-size: 16px;
+    }
+    .h5 {
+        font-size: 10px !important;
+    }
+    .cc {
+        margin-top: 20% !important;
+    }
+    .odd1{
+        padding-top: 60px;
+    }
+    .odd2{
+        padding-top: 20px;
+    }
+    .oddd{
+        font-size: 13px !important;
+        padding-bottom: 20px;
+    }
+    .f-div {
+        width: 20%;
+    }
+    .icons {
+        width: 40%;
+    }
+    .sss {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 749px){
+    .ddd {
+        margin: 15px;
+    }
+    .div-s2 {
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .div-s3 {
+        display: block;
+    }
+    .od{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .f-div {
+        width: 22%;
+    }
+}
+
+
+.nc {
+    margin: 10px 0;
+}
+
+.nc1 {
+    padding-top: 20px;
+}
+
+.nc2{
+    padding-bottom: 20px;
+}
+
+.nav-cont {
+    text-align: center;
+    width: 300px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    z-index: 1;
+    opacity: 0.9;
+    display: none;
+}

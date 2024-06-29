@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body class="overflow-x-hidden">
+    <header>
+        <div class="f-nav">
+            <div class="i-box">
+                <p class="pt-3"><i class="fa-solid fa-location-dot fa-sm" style="color: #acb5c3;"></i> Store Locator</p>
+                <span class="spn">|</span>
+                <p class="pt-3"><i class="fa-solid fa-truck fa-sm" style="color: #aeb5c1;"></i> Track Your Order</p>
+                <span class="spn">|</span>
+                <p class="pt-3"><i class="fa-solid fa-bag-shopping" style="color: #c7c9cc;"></i> Shop</p>
+                <span class="spn">|</span>
+                <p class="pt-3"><i class="fa-regular fa-user" style="color: #b1b4b9;"></i> My Account</p>
+            </div>
+        </div>
+        <div class="f-nav1">
+          <div class="f-div">
+            <div class="divimg">
+                <img class="logo" src="assets/logo-light.svg" alt=";logo">
+            </div>
+            <span onclick="foo()" class="sss"><i class="fa-solid fa-bars fa-xl"></i></span>
+          </div>
+          <div class="icons">
+            <span>
+                <i class="fa-solid fa-code-compare fa-xl"></i>
+            </span>
+            <span>
+                <i class="fa-regular fa-heart fa-xl"></i>
+            </span>
+            <span>
+                <i class="fa-solid fa-bag-shopping fa-xl"></i><span style="font-weight: bolder;">Rs0</span>
+            </span>
+          </div>
+        </div>
+        <div onmouseover="foo2()" onmouseout="foo1()" class="nav-cont" id="navCont">
+          <div class="spn1 nc nc1">Home</div>
+          <div class="nc">
+            <select class="selt1" name="" id="">
+              <option value="">Cameras</option>
+            </select>
+          </div>
+          <div class="nc">
+            <select class="selt1" name="" id="">
+              <option value="">Car Accessories</option>
+          </select>
+          </div>
+          <div class="nc">
+            <select class="selt1" name="" id="">
+              <option value="">Computer/Mobile Accessories</option>
+          </select>
+          </div>
+          <div class="nc">
+            <select class="selt1" name="" id="">
+              <option value="">Households</option>
+          </select>
+          </div>
+          <div class="spn1 nc">About</div>
+          <div class="spn1 nc nc2">Contact</div>
+        </div>
+        <script>
+          var i = "yes"
+          function foo(){
+            var getCont = document.getElementById("navCont")
+            if(i=="yes"){
+              getCont.style.display="block"
+              i = "no"
+            }
+            else if(i=="no"){
+              getCont.style.display="none"
+              i = "yes"
+            }
+          }
+          function foo2(){
+            var getCont = document.getElementById("navCont")
+            getCont.style.display="block"
+          }
+          function foo1(){
+            var getCont = document.getElementById("navCont")
+            getCont.style.display="none"
+          }
+        </script>
+        <div class="f-nav2">
+          <div class="inp-div">
+            <input class="inp" type="search" placeholder="Search for Products">
+            <select name="" id="" class="selt">
+                <option value="">All Categories &nbsp; &nbsp; &nbsp;</option>
+                <option value="">Car Accessories &nbsp; &nbsp; &nbsp;</option>
+                <option value="">Cameras &nbsp; &nbsp; &nbsp;</option>
+                <option value="">Computer/Mobile Accessories</option>
+                <option value="">Households &nbsp; &nbsp; &nbsp;</option>
+            </select>
+            <span class="mg">
+                <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+            </span>
+          </div>
+        </div>
+        <div class="s-nav">
+            <div class="i-box2">
+                <div class="f-div">
+                    <div class="divimg">
+                        <img class="logo" src="assets/logo-light.svg" alt=";logo">
+                    </div>
+                    <span onclick="foo()"><i class="fa-solid fa-bars fa-xl"></i></span>
+                </div>
+                <div class="inp-div" style="width: 65%;">
+                    <input class="inp" type="search" placeholder="Search for Products">
+                    <select name="" id="" class="selt">
+                        <option value="">All Categories &nbsp; &nbsp; &nbsp;</option>
+                        <option value="">Car Accessories &nbsp; &nbsp; &nbsp;</option>
+                        <option value="">Cameras &nbsp; &nbsp; &nbsp;</option>
+                        <option value="">Computer/Mobile Accessories</option>
+                        <option value="">Households &nbsp; &nbsp; &nbsp;</option>
+                    </select>
+                    <span class="mg">
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+                    </span>
+                </div>
+                <div class="icons">
+                    <span>
+                        <i class="fa-solid fa-code-compare fa-xl"></i>
+                    </span>
+                    <span>
+                        <i class="fa-regular fa-heart fa-xl"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-bag-shopping fa-xl"></i><span style="font-weight: bolder;">Rs0</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="t-nav">
+            <span class="spn1">Home</span>&nbsp; &nbsp;
+            <select class="selt1" name="" id="">
+                <option value="">Cameras</option>
+            </select>&nbsp; &nbsp;
+            <select class="selt1" name="" id="">
+                <option value="">Car Accessories</option>
+            </select>&nbsp; &nbsp;
+            <select class="selt1" name="" id="">
+                <option value="">Computer/Mobile Accessories</option>
+            </select>&nbsp; &nbsp;
+            <select class="selt1" name="" id="">
+                <option value="">Households</option>
+            </select>&nbsp; &nbsp;
+            <span class="spn1">About</span>&nbsp; &nbsp;
+            <span class="spn1">Contact</span>
+        </div>
+    </header>
+    <section>
+        <div class="div-s1">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="my-c carousel-inner">
+                    <div class="my-c1 carousel-item active">
+                        <div class="cc">
+                            <h5 class="h5">Shop to get what you love</h5>
+                            <h1 class="hhh"><span>Premium Quality</span><br><span style="font-weight: bold;"> Security Cameras</span></h1>
+                        </div>
+                        <div class="cc1">
+                            <img class="cimg" src="https://digitalshop.com.pk/wp-content/uploads/2021/08/security-cameras.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="my-c1 carousel-item">
+                        <div class="cc">
+                            <h5 class="h5">Shop to get what you love</h5>
+                            <h1 class="hhh"><span>Wide Variety of</span><br><span style="font-weight: bold;">Hidden Cameras</span></h1>
+                        </div>
+                        <div class="cc1">
+                            <img class="cimg" src="https://digitalshop.com.pk/wp-content/uploads/2021/08/hidden.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="my-c1 carousel-item">
+                        <div class="cc" style="margin-top: 8%;">
+                            <h5 class="h5">Shop to get what you love</h5>
+                            <h1 class="hhh"><span style="font-weight: bold;">Make Sure</span> Your<br><span>Vehicle Records</span><br>Everything that<br>happens</h1>
+                        </div>
+                        <div class="cc1">
+                            <img class="cimg" src="https://digitalshop.com.pk/wp-content/uploads/2021/08/slider.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="my-c1 carousel-item">
+                        <div class="cc" style="margin-top: 8%;">
+                            <h5 class="h5">Shop to get what you love</h5>
+                            <h1 class="hhh"><span>Monitor your daily</span><br>activities with<br><span style="font-weight: bold;">Smart Watches</span></h1>
+                        </div>
+                        <div class="cc1">
+                            <img class="cimg" src="https://digitalshop.com.pk/wp-content/uploads/2021/08/image_2021-08-07_134618.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="my-c1 carousel-item">
+                        <div class="cc" style="margin-top: 8%;">
+                            <h5 class="h5">Shop to get what you love</h5>
+                            <h1 class="hhh"><span>Fedup of using</span><br>local <span style="font-weight: bold;">Power Bank?</span><br>Use branded</h1>
+                        </div>
+                        <div class="cc1">
+                            <img class="cimg" src="https://digitalshop.com.pk/wp-content/uploads/2021/08/power-slider.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div style="border: 2px solid #acb5c3; width: 80%; border-radius: 10px;" class="overflow-x-auto div-s2 d-flex align-items-center justify-content-evenly mx-auto my-4">
+            <div class="pt-3 d-flex align-items-center ddd">
+                <i class="fa-solid fa-truck fa-2x"></i> 
+                <p class="ms-5"><span style="font-weight: bold;">Delivery</span><br>Throughtout<br>Pakistan</p>
+            </div>
+            <div style="background-color: #acb5c3; height: 90px; width: 1px;"></div>
+            <div class="pt-3 d-flex align-items-center ddd">
+                <i class="fa-solid fa-thumbs-up fa-2x"></i>
+                <p class="ms-5"><span style="font-weight: bold;">99% Posivive</span><br>Feedbacks</p>
+            </div>
+            <div style="background-color: #acb5c3; height: 90px; width: 1px;"></div>
+            <div class="pt-3 d-flex align-items-center ddd">
+                <i class="fa-solid fa-hand-holding-heart fa-2x"></i>
+                <p class="ms-5"><span style="font-weight: bold;">Only Best</span><br>Brands</p>
+            </div>
+        </div>
+        <div class="div-s3">
+            <div class="od" style="width: 49%;">
+                <div class="card mb-3 h-100" style="background-color: #e9ebee; border: none;">
+                    <div class="row g-0">
+                    <div class="col-6 pt-4 odd1">
+                        <img src="https://digitalshop.com.pk/wp-content/uploads/2021/08/2330591-middle-removebg.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body">
+                        <h5 class="card-title mt-5 oddd">HUGE SALE ON<br><span style="font-weight: bold;">SECURITY CAMERAS</span></h5>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="od" style="width: 49%;">
+                <div class="card mb-3 h-100" style="background-color: #e9ebee; border: none;">
+                    <div class="row g-0">
+                    <div class="col-6 odd2">
+                        <img src="https://digitalshop.com.pk/wp-content/uploads/2021/08/01-2.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body">
+                        <h5 class="card-title mt-5 oddd">SAVE BIG ON<br><span style="font-weight: bold;">HOME SECURITY SYSTEMS</span></h5>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-s4 px-5 py-5 container con" style="background-color: #e9ebee;">
+            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
+                <div class="col">
+                    <div class="card h-60">
+                      <img src="https://digitalshop.com.pk/wp-content/uploads/2024/04/440179273_1899960103787315_7433555709327568294_n-300x300.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"style="color: red;">Rs 8500</h5>
+                        <p class="card-text"style="color: blue;">PTZ WIFI OUTDOOR DUAL LENS 2MP+2MP 4MP IN TOTAL DUAL IR LED COLOR NIGHT VISION</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-60">
+                        <img src="https://digitalshop.com.pk/wp-content/uploads/2024/02/9c59ef932a87ed38d79d0c06dc5b978c-300x300.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"style="color: red;">Rs 12500</h5>
+                          <p class="card-text"style="color: blue;">Ultra HD high quality security camera with built in LED screen-M19</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-60">
+                        <img src="https://digitalshop.com.pk/wp-content/uploads/2023/12/IMG_20231228_021408-300x300.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"style="color: red;">Rs 4500</h5>
+                          <p class="card-text"style="color: blue;">World’s Smallest Camera – w812</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card h-60">
+                        <img src="https://digitalshop.com.pk/wp-content/uploads/2023/05/V380-Panoramic-Wireless-Wifi-Camera-support-64G-TF-card-Two-way-voice-built-in-Microphone-day-600x600.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"style="color: red;">Rs 4750</h5>
+                          <p class="card-text"style="color: blue;">Intelligent Super Smart Panoramic Camera H5</p>
+                        </div>
+                      </div>
+                  </div>
+                <div class="col">
+                  <div class="card h-60">
+                    <img src="https://digitalshop.com.pk/wp-content/uploads/2023/12/IMG_20231216_014120-300x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"style="color: red;">Rs 4550</h5>
+                      <p class="card-text"style="color: blue;">Wall Clock Camera – Ultra micro hidden camera</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card h-60">
+                      <img src="https://digitalshop.com.pk/wp-content/uploads/2023/12/IMG_20231213_002752-300x300.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"style="color: red;">Rs 3750</h5>
+                        <p class="card-text"style="color: blue;">Magic Mirror- World’s Smallest Wifi Camera Video & Audio</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-60">
+                      <img src="https://digitalshop.com.pk/wp-content/uploads/2023/07/tracker2-300x300.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"style="color: red;">Rs 9999</h5>
+                        <p class="card-text"style="color: blue;">Super Smart GPS Tracking System For Car, Bike , Truck, Bus</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-60">
+                      <img src="https://digitalshop.com.pk/wp-content/uploads/2021/08/elec-300x300.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"style="color: red;">Rs below 15K</h5>
+                        <p class="card-text"style="color: blue;">
+                            Computer And Mobile Accessories</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-60">
+                      <img src="https://digitalshop.com.pk/wp-content/uploads/2021/08/spy-300x300.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"style="color: red;">Rs below 25K</h5>
+                        <p class="card-text"style="color: blue;">Cameras</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card h-60">
+                    <img src="https://digitalshop.com.pk/wp-content/uploads/2021/08/car-300x300.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"style="color: red;">Rs below 20K</h5>
+                      <p class="card-text"style="color: blue;">Car Accessories</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-60">
+                    <img src="https://digitalshop.com.pk/wp-content/uploads/2021/08/13-300x300.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"style="color: red;">Rs 3350</h5>
+                      <p class="card-text"style="color: blue;">IR MINI WIFI CAMERA V380 APP 1080P HD</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-60">
+                    <img src="https://digitalshop.com.pk/wp-content/uploads/2023/01/S0a1f09fc0e9f4b61a3cfa82f1b607cf5A-300x300.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"style="color: red;">Rs 15999</h5>
+                      <p class="card-text"style="color: blue;">Super Smart Video Drone With Two Cameras</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <footer style="background-color: #e9ebee">
+        <div class="container mt-5">
+            <!-- Footer -->
+            <footer class="text-center text-dark" style="background-color: #e9ebee">
+              <!-- Grid container -->
+              <div class="container">
+                <!-- Section: Links -->
+                <section class="mt-5">
+                  <!-- Grid row-->
+                  <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                      <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" class="text-dark">About us</a>
+                      </h6>
+                    </div>
+                    <!-- Grid column -->
+          
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                      <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" class="text-dark">Products</a>
+                      </h6>
+                    </div>
+                    <!-- Grid column -->
+          
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                      <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" class="text-dark">Awards</a>
+                      </h6>
+                    </div>
+                    <!-- Grid column -->
+          
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                      <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" class="text-dark">Help</a>
+                      </h6>
+                    </div>
+                    <!-- Grid column -->
+          
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                      <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" class="text-dark">Contact</a>
+                      </h6>
+                    </div>
+                    <!-- Grid column -->
+                  </div>
+                  <!-- Grid row-->
+                </section>
+                <!-- Section: Links -->
+          
+                <hr class="my-3" />
+          
+                <!-- Section: Text -->
+                <section class="mb-1">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="div-f mb-2 bg-dark" style="width: 10%; margin: auto; border-radius: 100px;">
+                            <img class="logo" src="assets/logo-light.svg" alt=";logo">
+                        </div>
+                      <p>
+                        Premium Quality Branded products with reasonable prices Quality Guaranteed, Discover a wide range of electronic products to suit all your needs. From the latest gadgets and accessories to essential household electronics, we offer top-quality products at competitive prices. Stay connected with us for exclusive deals, updates, and the best in tech. Your satisfaction is our priority.
+                      </p>
+                    </div>
+                  </div>
+                </section>
+                <!-- Section: Text -->
+          
+                <!-- Section: Social -->
+                <section class="text-center mb-5">
+                  <a href="" class="text-dark me-4">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="" class="text-dark me-4">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="" class="text-dark me-4">
+                    <i class="fab fa-google"></i>
+                  </a>
+                  <a href="" class="text-dark me-4">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="" class="text-dark me-4">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="" class="text-dark me-4">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </section>
+                <!-- Section: Social -->
+              </div>
+              <!-- Grid container -->
+          
+              <!-- Copyright -->
+              <div
+                   class="text-center p-3"
+                   style="background-color: rgba(0, 0, 0, 0.2)"
+                   >
+                © 2024 Copyright:
+                <a class="text-dark" href="https://mdbootstrap.com/"
+                   >digitaloutlet.info</a
+                  >
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+          </div>
+    </footer>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
